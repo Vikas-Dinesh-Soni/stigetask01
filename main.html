@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocean World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="all">
+
+      <div class="header">
+        <h2 class="logo">Ocean &nbsp; World</h2>
+        <div class="toggle  "></div>
+      </div>
+
+      <video src="ocean.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <div class="info">
+          <h3>Dive into the Ocean</h3>
+          <h4>and Explore with us !</h4>
+        </div>
+        <div class="subinfo">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+            inventore pariatur sit provident sed tempora aut necessitatibus.
+            Distinctio doloribus fugiat atque, deserunt perspiciatis vitae, ipsa
+            culpa, recusandae ut esse dicta?
+          </p>
+        </div>
+        <a href="#">Explore</a>
+      </div>
+
+
+      <div >
+          <ul class="social">
+              <li><a href="#"><img src="facebook.png" alt="" class="sc"></a></li>
+              <li><a href="#"><img src="insta.png" alt="" class="sc"></a></li>
+              <li><a href="#"><img src="twitter.png" alt="" class="sc"></a></li>
+          </ul>
+      </div>
+    </main>
+
+
+
+
+    <div class="menu">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Book</a> </li>
+                <li> <a href="#">Activity</a> </li>
+                <li> <a href="#">Blog</a> </li>
+                <li> <a href="#">About us</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const all = document.querySelector('.all')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            all.classList.toggle('active')
+        })
+    </script>
+  </body>
+</html>

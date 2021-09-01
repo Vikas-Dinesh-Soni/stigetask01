@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.all{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    z-index: 2;
+    transition: 1s;
+}
+
+.all.active{
+    right: 300px;
+}
+.all .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+
+.toggle{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: url(open.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.toggle.active{
+    background: url(close.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.all video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6cb0cf;
+    mix-blend-mode: overlay;
+}
+
+.text{
+    position: relative;
+    z-index: 10;
+}
+
+.text h3{
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.text h4{
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1em;
+    padding-top: 1rem;
+}
+
+.text p{
+    font-size: 1.1em;
+    margin: 20px 0;
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+.text a{
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+.text a:hover{
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+
+.social{
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    z-index : 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 40px;
+    filter: invert(1);
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.social li a:hover{
+    transform: scale(0.9) translateY(-15px);
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: white;
+    border-left: 3px solid white;
+    
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+    
+}
+
+.menu ul li {
+    margin-bottom: 23px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    transition: 0.3s;
+    color: white;
+    
+}
+
+.menu ul li a:hover{
+    color: rgb(74, 74, 214);
+}
+
+
+
+@media(max-width: 700px){
+    .all, .all .header{
+        padding: 40px;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+
+    .text h3{
+        
+        font-size: 2em;
+    }
+
+    .text h4{
+        padding-top: 8px;
+        font-size: 1.5em;
+    }
+
+    .text p{
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .social{
+        position: absolute;
+        bottom: 20px;
+        left: 40px;
+        z-index : 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social li a{
+        display: inline-block;
+        margin-right: 20px;
+        transform: scale(0.7);
+        transition: 0.5s;
+    }
+
+   
+
+}
